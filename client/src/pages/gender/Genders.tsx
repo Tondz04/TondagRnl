@@ -1,5 +1,5 @@
 import AddGenderForm from "../../components/forms/AddGenderForm";
-import GendersTable from "../../components/tables/GendersTable";
+import GendersTable from "../../components/table/GendersTable";
 import MainLayout from "../layout/MainLayout";
 
 const Genders = () => {
