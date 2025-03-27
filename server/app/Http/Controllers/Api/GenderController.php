@@ -8,6 +8,13 @@ use Illuminate\Http\Request;
 
 class GenderController extends Controller
 {
+    public function loadGenders () {
+        $genders = Gender::all();
+        return response()->json([
+            'genders' => $genders
+        ], 200);
+    }
+
     public function storedGender(Request $request)
     {
         $validated = $request->validate([

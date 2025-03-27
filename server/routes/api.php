@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::controller(GenderController::class)->group(function () {
+    route::get('/loadGenders', 'loadGenders');
     Route::post('/storeGender', 'storedGender');
 });
 
