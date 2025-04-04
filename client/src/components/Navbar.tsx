@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 const Navbar = () => {
   const menuItems = [
     {
+      route: "/",
       tittle: "Genders",
     },
-    { tittle: "Users" },
+    {
+      route: "/users",
+      tittle: "Users",
+    },
   ];
 
   return (
@@ -30,7 +34,7 @@ const Navbar = () => {
             <ul className="navbar-nav">
               {menuItems.map((menuItem, index) => (
                 <li className="nav-item" key={index}>
-                  <Link className="nav-link " to={"#"}>
+                  <Link className="nav-link " to={menuItem.route}>
                     {menuItem.tittle}
                   </Link>
                 </li>

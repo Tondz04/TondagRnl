@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import GenderService from "../../services/GenderService";
+import GenderService from "../../../services/GenderService";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import ErrorHandler from "../../handler/ErrorHandler";
-import Spinner from "../Spinner";
-import GenderFieldErrors from "../../interfaces/GenderFieldErrors";
-import SpinnerSmall from "../SpinnerSmall";
+import ErrorHandler from "../../../handler/ErrorHandler";
+import Spinner from "../../Spinner";
+import GenderFieldErrors from "../../../interfaces/GenderFieldErrors";
+import SpinnerSmall from "../../SpinnerSmall";
 
 interface EditGenderFormProps {
   onGenderUpdate: (message: string) => void;
